@@ -30,6 +30,7 @@ export function useTransactionPolling(handleComplete: () => void) {
     // Polling transaction receipt until status = 1
     const interval = setInterval(async () => {
       const transactionReceipt = await getTransactionReceipt(hash)
+      console.log(transactionReceipt)
       if (transactionReceipt != null) {
         const { status, logs } = transactionReceipt
 
@@ -39,6 +40,7 @@ export function useTransactionPolling(handleComplete: () => void) {
 
           if (messageType) {
             // decode log to get messageBytes
+            console.log(logs, messageType)
             const messageBytes = getMessageBytesFromEventLogs(logs, messageType)
             // hash the message bytes
             const messageHash = getMessageHashFromBytes(messageBytes)

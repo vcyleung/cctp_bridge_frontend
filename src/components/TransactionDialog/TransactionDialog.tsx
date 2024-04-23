@@ -8,6 +8,7 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
+  Link,
 } from '@mui/material'
 
 import { CHAIN_ICONS } from 'assets/chains'
@@ -63,7 +64,16 @@ const TransactionDialog: React.FC<Props> = ({
       <DialogTitle className="text-7xl">Transferring...</DialogTitle>
       <DialogContentText className="text-xl">
         Please do not close your browser window. This may take a few minutes to
-        complete.
+        complete. Depends on the block confirms, check{' '}
+        <Link
+          href="https://developers.circle.com/stablecoins/docs/required-block-confirmations"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {' '}
+          here
+        </Link>{' '}
+        for more details.
       </DialogContentText>
       <DialogContent className="mb-20 flex-initial text-center">
         <div className="flex items-center justify-center">

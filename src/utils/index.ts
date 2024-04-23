@@ -44,6 +44,7 @@ export function getMessageBytesFromEventLogs(
 ): Bytes {
   const eventTopic = id(topic)
   const log = logs.filter((l) => l.topics[0] === eventTopic)[0]
+  console.log(log)
   return defaultAbiCoder.decode(['bytes'], log.data)[0] as Bytes
 }
 

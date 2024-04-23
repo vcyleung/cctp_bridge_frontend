@@ -128,3 +128,12 @@ typechain --target=ethers-v5 --out-dir src/typechain src/abis/*.json
 ```
 
 This generates `typechain` folder under `src` containing contract types to be used by our hooks
+
+http://localhost:3000/?txHash=0xc5964a01592cfbbb9d46f7d847023cc06e9c4b9c45bb78d06a703999852085a1
+
+Block confirms
+
+Ethereum ~65* ~13 minutes Avalanche 1 ~20 seconds OP Mainnet ~65 ETH blocks* ~13 minutes Arbitrum ~65 ETH blocks* ~13 minutes Noble 1 ~20 seconds Base ~65 ETH blocks* ~13 minutes Polygon PoS ~200\* ~8 minutes Solana 32 ~25 seconds
+
+<!-- needs a check gas on source and destination chain -->
+<!-- if not gas on destination show redeem / link page -->

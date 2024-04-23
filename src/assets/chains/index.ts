@@ -6,4 +6,9 @@ export const CHAIN_ICONS = {
   ETH,
   AVAX,
   ARB,
+  OP: ETH,
+  NOBLE: ETH,
+  SOL: ETH,
+  BASE: ETH,
+  POLYGON_POS: ETH,
 }
